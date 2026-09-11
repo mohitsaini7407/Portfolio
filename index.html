@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Saini | Full Stack Developer</title>
+    <meta name="description"
+        content="Mohit Saini is a Full Stack Web Developer specializing in React, Node.js, cloud deployment, and end-to-end product development.">
+    <link rel="canonical" href="https://github.com/mohitsaini7407" />
+
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohit Saini | Full Stack Developer">
+    <meta property="og:description" content="Explore my projects, work experience, and technical skills in full stack development, cloud, and DevOps.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/144822812?v=4">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mohit Saini | Full Stack Developer">
+    <meta name="twitter:description" content="Explore my projects, work experience, and technical skills in full stack development, cloud, and DevOps.">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/144822812?v=4">
+
+    <link rel="icon" href="portfolio_assets/Mohit_Favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <script type="module" src="./speed-insights.js"></script>
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- ── Floating Navbar ── -->
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-pill">
+            <span class="nav-indicator" id="navIndicator"></span>
+            <a href="#home" class="nav-link active" data-section="home">
+                <i class="fa-solid fa-house nav-icon"></i>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <i class="fa-solid fa-user nav-icon"></i>
+                <span class="nav-label">About</span>
+            </a>
+            <a href="#experience" class="nav-link" data-section="experience">
+                <i class="fa-solid fa-briefcase nav-icon"></i>
+                <span class="nav-label">Experience</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <i class="fa-solid fa-code nav-icon"></i>
+                <span class="nav-label">Projects</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <i class="fa-solid fa-layer-group nav-icon"></i>
+                <span class="nav-label">Skills</span>
+            </a>
+            <a href="#certifications" class="nav-link" data-section="certifications">
+                <i class="fa-solid fa-award nav-icon"></i>
+                <span class="nav-label">Certs</span>
+            </a>
+            <a href="#profiles" class="nav-link" data-section="profiles">
+                <i class="fa-solid fa-globe nav-icon"></i>
+                <span class="nav-label">Profiles</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <i class="fa-solid fa-envelope nav-icon"></i>
+                <span class="nav-label">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ── Preloader: Boot Sequence ── -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-particles" id="preloaderParticles"></div>
+
+        <!-- Branding -->
+        <div class="preloader-brand">
+            <div class="preloader-brand-main">
+                <span class="preloader-brand-name">Mohit</span><span class="preloader-brand-accent">Saini</span>
+            </div>
+            <div class="preloader-brand-subtitle">
+                <span class="subtitle-line"></span>
+                <span>Full Stack Portfolio</span>
+                <span class="subtitle-line"></span>
+            </div>
+        </div>
+
+        <!-- Sleek Loading Bar -->
+        <div class="preloader-sleek-track">
+            <div class="preloader-sleek-fill" id="preloaderSleekFill"></div>
+        </div>
+
+        <!-- Cycling Tagline -->
+        <div class="preloader-tagline">
+            <span class="tagline-word" style="--w:0">Ideate.</span>
+            <span class="tagline-word" style="--w:1">Design.</span>
+            <span class="tagline-word" style="--w:2">Develop.</span>
+            <span class="tagline-word" style="--w:3">Innovate.</span>
+        </div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="background-container">
+        <canvas id="bg-canvas"></canvas>
+
+    </div>
+
+    <main class="hero" id="home">
+
+        <div class="floating-icon icon-top-left">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="floating-icon icon-top-right">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="floating-icon icon-bottom-left">
+            <i class="fa-solid fa-trophy"></i>
+        </div>
+        <div class="floating-icon icon-bottom-right">
+            <i class="fa-regular fa-lightbulb"></i>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="sub-title">Glad you’re here! Let me introduce myself ... </h2>
+            <br>
+            <br>
+            <h1 class="sr-only">Mohit Saini - Full Stack Developer Portfolio</h1>
+            <h2 class="main-title">
+                <span class="purple-text" id="typing-text"></span>
+            </h2>
+            <br>
+            <br>
+            <h5 class="year">Mohit Saini | Full Stack Web Developer | CSE</h5>
+            <br>
+            <div class="hero-buttons">
+                <a href="https://linkedin.com/in/mohitsaini7407" target="_blank" class="btn-resume">Let's Connect</a>
+                <a href="portfolio_assets/Mohit_Saini_Resume.pdf" target="_blank" id="openResumeBtn" class="btn-resume">View Resume</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-section" id="about">
+        <div class="glass-card scroll-reveal">
+            <h2>About Me - <span class="purple-text">Problem Solver & Builder</span></h2>
+            <p>
+                I’m Mohit — a Full Stack Web Developer who turns ideas into clean, scalable, and user-friendly applications. 🚀
+                </br>
+                I build with React, Node.js, REST APIs, databases, and cloud technologies. I love solving real-world problems, learning new tech, and turning “what if?” into “it works!” 😄
+            </p>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="projects-section" id="experience">
+        <h2 class="section-title">Work Experience - <span class="purple-text">Professional Journey!</span></h2>
+        <br>
+        <div class="timeline">
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-number">01</div>
+                <div class="timeline-content">
+                    <div class="project-tag">Upflairs Pvt. Ltd.</div>
+                    <img src="portfolio_assets/Upflairs_Logo.png" alt="Upflairs Pvt. Ltd." class="company-logo">
+                    <h3>Full Stack Web Developer</h3>
+                    <p style="text-align: left; padding: 10px 0;">
+                        • Built and shipped responsive, user-facing features with React and JavaScript, improving application responsiveness and user engagement.<br><br>
+                        • Implemented authentication and state management features that strengthened application security and improved the user experience.<br><br>
+                        • Integrated and tested RESTful APIs to connect frontend and backend systems, reducing data retrieval time by 20%.<br><br>
+                        • Maintained version control using Git/GitHub and collaborated with design and product teams to deliver smoother UI/UX improvements.
+                    </p>
+                </div>
+                <div class="timeline-date">JUL 2025 – JAN 2026</div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-number">02</div>
+                <div class="timeline-content">
+                    <div class="project-tag">Upflairs Pvt. Ltd.</div>
+                    <img src="portfolio_assets/Upflairs_Logo.png" alt="Upflairs Pvt. Ltd." class="company-logo">
+                    <h3>DevOps & Cloud Computing Intern</h3>
+                    <p style="text-align: left; padding: 10px 0;">
+                        • Implemented cloud and deployment technologies including Linux, Docker, Jenkins, AWS, Kubernetes, Ansible, Terraform, Bash, and YAML to streamline deployment processes.<br><br>
+                        • Gained hands-on experience with automation, CI/CD pipelines, cloud deployment, container orchestration, and integration management across development and operations environments.<br><br>
+                        • Partnered with development and product teams to align deployments with project goals and improve coordination in production workflows.
+                    </p>
+                </div>
+                <div class="timeline-date">JUL 2024 – OCT 2024</div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Projects Showcase - <span class="purple-text">What I've Built!</span></h2>
+        <br>
+        <div class="experience-grid">
+
+            <div class="experience-card">
+                <div class="experience-date">AI & ML</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">Video Assistant + Weather Insights</div>
+                <h3>DisasterGuard</h3>
+                <p>
+                    Built a map-based dashboard using React, Leaflet, and D3.js to visualize live disaster risk scores and alerts from multiple external APIs with a FastAPI backend.
+                </p>
+                <div class="project-links-wrapper">
+                    <a href="https://disasterguard.vercel.app/" target="_blank" class="project-btn primary-btn"><i class="fa-regular fa-eye"></i> View Live</a>
+                    <a href="https://github.com/mohitsaini7407/disasterguard" target="_blank" class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">FULL STACK</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">Tournament App</div>
+                <h3>MenixPros</h3>
+                <p>
+                    A BGMI tournament application with a full user flow including login, management, and gameplay-focused features for competitive gaming communities.
+                </p>
+                <div class="project-links-wrapper">
+                    <a href="https://menix-full-stack.vercel.app/" target="_blank" class="project-btn primary-btn"><i class="fa-regular fa-eye"></i> View Live</a>
+                    <a href="https://github.com/mohitsaini7407/menix-full-stack" target="_blank" class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">AI PROJECT</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">AI + Web App</div>
+                <h3>AI Figure Generator for Scientists</h3>
+                <p>
+                    Developed a web application that generates biology diagrams from text prompts using React, Node.js, and OpenAI/Gemini APIs, helping scientists create accurate visuals faster.
+                </p>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/mohitsaini7407" target="_blank" class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">CLOUD</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">AWS Platform</div>
+                <h3>Cloud-Native Hosting Control Panel</h3>
+                <p>
+                    Implemented a multitenant hosting control panel on AWS using EC2, RDS, S3, and Lambda, with role-based access control and automated backup workflows.
+                </p>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/mohitsaini7407" target="_blank" class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">FULL STACK</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">CI/CD & Task Manager</div>
+                <h3>Team Task & Deployment Manager</h3>
+                <p>
+                    Created a full-stack application that integrates Jenkins, Docker, and Kubernetes status with project task management and real-time notifications.
+                </p>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/mohitsaini7407/menix-full-stack" target="_blank" class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">DATA</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">NLP Project</div>
+                <h3>Sentiment Analysis</h3>
+                <p>
+                    Built a sentiment analysis pipeline for text-driven insights, combining data processing and model-based evaluation to derive actionable results.
+                </p>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/mohitsaini7407/sentiment-analysis" target="_blank" class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Technical Skills - <span class="purple-text">Core Expertise!</span></h2>
+
+        <div class="skill-filters" id="skillFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="languages">Languages</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skill-grid" id="skillGrid">
+
+            <div class="skill-card" data-category="languages">
+                <i class="devicon-java-plain colored"></i>
+                <span>Java</span>
+            </div>
+            <div class="skill-card" data-category="languages">
+                <i class="fa-brands fa-python" style="color: #3776AB;"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-card" data-category="languages">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <span>C/C++</span>
+            </div>
+            <div class="skill-card" data-category="languages">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card" data-category="languages">
+                <i class="devicon-typescript-plain colored"></i>
+                <span>TypeScript</span>
+            </div>
+            <div class="skill-card" data-category="languages">
+                <i class="fa-solid fa-database" style="color: #f5b700;"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill-card" data-category="frontend">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+            </div>
+            <div class="skill-card" data-category="frontend">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
+            </div>
+            <div class="skill-card" data-category="frontend">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
+            </div>
+            <div class="skill-card" data-category="frontend">
+                <i class="devicon-nextjs-plain"></i>
+                <span>Next.js</span>
+            </div>
+            <div class="skill-card" data-category="frontend">
+                <i class="devicon-tailwindcss-original colored"></i>
+                <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-card" data-category="backend">
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill-card" data-category="backend">
+                <i class="devicon-express-original"></i>
+                <span>Express.js</span>
+            </div>
+            <div class="skill-card" data-category="backend">
+                <i class="devicon-fastapi-plain colored"></i>
+                <span>FastAPI</span>
+            </div>
+            <div class="skill-card" data-category="backend">
+                <i class="fa-solid fa-server" style="color: #8b5cf6;"></i>
+                <span>REST APIs</span>
+            </div>
+            <div class="skill-card" data-category="cloud">
+                <i class="fa-brands fa-aws" style="color: #ff9900;"></i>
+                <span>AWS</span>
+            </div>
+            <div class="skill-card" data-category="cloud">
+                <i class="devicon-docker-plain colored"></i>
+                <span>Docker</span>
+            </div>
+            <div class="skill-card" data-category="cloud">
+                <i class="devicon-kubernetes-plain colored"></i>
+                <span>Kubernetes</span>
+            </div>
+            <div class="skill-card" data-category="cloud">
+                <i class="devicon-jenkins-plain colored"></i>
+                <span>Jenkins</span>
+            </div>
+            <div class="skill-card" data-category="cloud">
+                <i class="fa-solid fa-code-branch" style="color: #a855f7;"></i>
+                <span>Terraform</span>
+            </div>
+            <div class="skill-card" data-category="cloud">
+                <i class="fa-solid fa-terminal" style="color: #36c2ff;"></i>
+                <span>Bash</span>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <i class="devicon-postman-plain colored"></i>
+                <span>Postman</span>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <i class="fa-solid fa-cloud" style="color: #ffffff;"></i>
+                <span>Vercel</span>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <i class="fa-solid fa-rocket" style="color: #38bdf8;"></i>
+                <span>Linux</span>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <i class="fa-solid fa-server" style="color: #22c55e;"></i>
+                <span>MongoDB</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="certifications-section" id="certifications">
+        <h2 class="section-title">Certifications - <span class="purple-text">Learning Milestones!</span></h2>
+
+        <div class="cert-grid">
+
+            <div class="cert-item">
+                <div class="cert-img-wrapper">
+                    <img src="portfolio_assets/IEEE_HACK.jpg" alt="IEEE Hack Certificate">
+                    <div class="cert-overlay">
+                        <a href="https://drive.google.com/file/d/1ncSPbcJQfRb1ITzsJyZnukKubOUJhk_7/view?usp=drive_link"
+                            target="_blank" class="cert-overlay-link">
+                            <span>View Credentials</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <h3>YESIST12 Hackathon</h3>
+                    <p>Recognized for participating in the YESIST12 hackathon, where our team contributed to ideation,
+                        rapid prototyping, and problem-solving in a competitive innovation-driven environment.</p>
+                </div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-img-wrapper">
+                    <img src="portfolio_assets/Publication_cert.jpg" alt="Publication Certificate">
+                    <div class="cert-overlay">
+                        <a href="https://drive.google.com/file/d/1JDWm2D06TlXsLn_dSSy60EozSrC3dLRs/view?usp=drive_link"
+                            target="_blank" class="cert-overlay-link">
+                            <span>View Credentials</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <h3>Publication Certificate</h3>
+                    <p>Acknowledges the author’s contribution to a research or technical publication, reflecting academic
+                        writing, innovation, and knowledge-sharing in a professional domain.</p>
+                </div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-img-wrapper">
+                    <img src="portfolio_assets/OW_Cert.jpg" alt="Open Weaver Certificate">
+                    <div class="cert-overlay">
+                        <a href="https://drive.google.com/file/d/1sAwque7ps15rUYobnt2BwxXm0kgmmwEb/view?usp=drive_link"
+                            target="_blank" class="cert-overlay-link">
+                            <span>View Credentials</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <h3>Open Weaver Certificate</h3>
+                    <p>Recognizes participation in the Open Weaver learning initiative, highlighting practical exposure to
+                        emerging technologies and continuous skill development.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="profiles-section" id="profiles">
+        <h2 class="section-title">Web Presence - <span class="purple-text">My Network!</span></h2>
+        <div class="profile-header">
+            <div class="profile-img-main">
+                <img src="https://avatars.githubusercontent.com/u/144822812?v=4" alt="Mohit Saini">
+            </div>
+            <div class="profile-text">
+                <p class="purple-text">@mohitsaini7407</p>
+            </div>
+        </div>
+
+        <div class="profiles-grid">
+
+            <a href="https://linkedin.com/in/mohitsaini7407" target="_blank" class="profile-card">
+                <div class="profile-icon">
+                    <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>LinkedIn</h3>
+                    <p>Connect</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/mohitsaini7407" target="_blank" class="profile-card">
+                <div class="profile-icon">
+                    <i class="fa-brands fa-github" style="color: #fff;"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>GitHub</h3>
+                    <p>Code</p>
+                </div>
+            </a>
+
+            <a href="https://leetcode.com/u/mohitsaini7407" target="_blank" class="profile-card">
+                <div class="profile-icon">
+                    <i class="devicon-leetcode-plain colored"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>LeetCode</h3>
+                    <p>Compete</p>
+                </div>
+            </a>
+
+            <a href="https://codeforces.com/profile/mohitsaini7407" target="_blank" class="profile-card">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-code" style="color: #ffbf29;"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>Codeforces</h3>
+                    <p>Problem Solve</p>
+                </div>
+            </a>
+        </div>
+        <br>
+        <p class="profile-note">You can explore my projects, technical depth, and problem-solving work through the profiles above.</p>
+    </section>
+
+    <br>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch - <span class="purple-text">Let’s Build Together!</span></h2>
+            <h4 class="contact-note">Open to product engineering, full-stack development, DevOps, and collaboration opportunities.<br> I’m always happy to connect and discuss ideas.</h4>
+            <div class="contact-card">
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/mohitbanasya1@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New portfolio contact message">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
+                        <label for="name">Name</label>
+                        <i class="fa-solid fa-user input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                        <label for="email">Email</label>
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                        <i class="fa-solid fa-comment input-icon"></i>
+                    </div>
+                    <button type="submit" class="btn-resume btn-submit">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2 class="footer-logo">Mohit<span class="purple-text">Saini</span></h2>
+                <p class="footer-tagline">Building scalable products, systems, and experiences.</p>
+            </div>
+
+            <ul class="footer-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/mohitsaini7407" target="_blank" class="social-link linkedin" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/mohitsaini7407" target="_blank" class="social-link github" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:mohitbanasya1@gmail.com" target="_blank" class="social-link email" aria-label="Email"><i
+                        class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mohit Saini. All rights reserved.</p>
+            <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content glass-card">
+            <span class="close-modal" id="closeResumeBtn">&times;</span>
+            <h2 style="margin-bottom: 20px;">My Resume - <span class="purple-text">PDF Preview</span></h2>
+            <div class="resume-iframe-container">
+                <iframe src="portfolio_assets/Mohit_Saini_Resume.pdf" width="100%" height="100%"
+                    style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="3d_background.js"></script>
+    <script src="script.js?v=contact-formsubmit-1"></script>
+</body>
+
+</html>
